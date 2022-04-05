@@ -106,7 +106,8 @@ function loopGame() {
    context.beginPath(); // modo desenho 
    context.arc(bolaPosX, bolaPosY, bolaRaio, 0, Math.PI * 2, true); // desenha o circulo com coordenadas no centro
    context.closePath(); // finaliza o caminho / não é obrigatório
-   //context.fillStyle = "#ffffff";
+   context.fillStyle = "#ffffff";
+   context.fillStyle = '#28024b'; // define o preenchimento do retângulo
    context.fill();
 
 
@@ -159,7 +160,7 @@ function loopGame() {
             }
         }
         else {
-            if ((bolaPosX + bolaRaio) >= jogadorBPosY) { // se o oponente encostar na bola no eixo X
+            if ((bolaPosX + bolaRaio) >= jogadorBPosX) { // se o oponente encostar na bola no eixo X
                
                 if ((bolaPosY + bolaRaio) > jogadorBPosY && (bolaPosY - bolaRaio < jogadorBPosY + barraHeigth)) { // se o oponente encostar na bola no eixo Y
                     bolaParaDireita = false;
