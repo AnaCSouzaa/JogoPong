@@ -1,7 +1,5 @@
 ﻿#canvas {
     border: 10px solid #28024b;
-    context.fillStyle = '#28024b'; // define o preenchimento do retângulo
-    context.fill();
 }
 body {
     background: linear-gradient(90deg, rgb(164, 8, 255) 0%, rgb(172, 52, 241) 35%, rgb(192, 93, 238) 100%);
